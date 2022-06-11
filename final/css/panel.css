@@ -1,0 +1,35 @@
+.question{
+     margin-top: 5%;
+     font-weight: bold;
+     text-align: center;
+     font-size:50px;
+     position: relative;
+     z-index: -1;
+   }
+  
+   .accrodion {
+    top: 100px;
+    background-color:#FFDCB9		;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .active, .accrodion:hover {
+    background-color: #FFED97;
+  }
+  
+  .panel {
+    top: 100px;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #FFF4C1;
+    font-size: 20px;
+  }

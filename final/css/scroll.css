@@ -1,0 +1,148 @@
+
+/*自定義一個透明度從0到1的動畫，它的名稱是fade-in*/
+@keyframes fade-in{  
+  0%{ opacity: 0;}
+  100%{opacity:1;}
+}
+@-webkit-keyframes fade-in{
+  0%{ opacity: 0;}
+  100%{opacity:1;}
+}
+@-ms-keyframes fade-in{
+  0%{ opacity: 0;}
+  100%{opacity:1;}
+}
+@-o-keyframes fade-in{
+  0%{ opacity: 0;}
+  100%{opacity:1;}
+}
+@-moz-keyframes fade-in{
+  0%{ opacity: 0;}
+  100%{opacity:1;}
+}
+.first{
+  opacity: 0; /*實先規定文字的狀態是不顯示的*/
+  animation: fade-in 4s ease 0s infinite; /*調用名稱為fade-in的動畫，全程動畫顯示時間4S，進入方式為ease，延時0S進入，播放次數1次*/
+  -webkit-animation: fade-in 4s ease 0s 1;
+  -moz-animation: fade-in 4s ease 0s 1;
+  -o-animation: fade-in 4s ease 0s 1;
+  -ms-animation: fade-in 4s ease 0s 1;
+  
+  /*規定動畫的最後狀態為結束狀態*/
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;  
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;   
+    -moz-animation-fill-mode: forwards;
+    position:absolute;
+    left: 300px;
+    top:100px;
+    font-size: 35px;
+    letter-spacing: 5px;
+    font-family: "標楷體";
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+}
+.second{
+  opacity: 0;    
+  animation: fade-in 4s ease 2s 1;
+  -webkit-animation: fade-in 4s ease 2s 1;
+  -moz-animation: fade-in 4s ease 2s 1;
+  -o-animation: fade-in 4s ease 2s 1;
+  -ms-animation: fade-in 4s ease 2s 1;
+  /*規定動畫的最後狀態為結束狀態*/
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;  
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;   
+    -moz-animation-fill-mode: forwards;
+    position:absolute;
+    letter-spacing: 5px;
+    left: 300px;
+    top:200px;
+    font-size: 35px;
+    font-family: "標楷體";
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+}
+.third{
+  opacity: 0;    
+  animation: fade-in 4s ease 4s 1;
+  -webkit-animation: fade-in 4s ease 4s 1;
+  -moz-animation: fade-in 4s ease 4s 1;
+  -o-animation: fade-in 4s ease 4s 1;
+  -ms-animation: fade-in 4s ease 4s 1;
+  /*規定動畫的最後狀態為結束狀態*/
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;  
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;   
+    -moz-animation-fill-mode: forwards;
+    position:absolute;
+    letter-spacing: 5px;
+    left: 300px;
+    top:300px;
+    font-size: 35px;
+    font-family: "標楷體";
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+}
+.four{
+  opacity: 0;    
+  animation: fade-in 4s ease 6s 1;
+  -webkit-animation: fade-in 4s ease 6s 1;
+  -moz-animation: fade-in 4s ease 6s 1;
+  -o-animation: fade-in 4s ease 6s 1;
+  -ms-animation: fade-in 4s ease 6s 1;
+  /*規定動畫的最後狀態為結束狀態*/
+  animation-fill-mode:forwards;
+  -webkit-animation-fill-mode: forwards;  
+    -o-animation-fill-mode: forwards;
+    -ms-animation-fill-mode: forwards;   
+    -moz-animation-fill-mode: forwards;
+    position:absolute;
+    letter-spacing: 5px;
+    left: 300px;
+    top:400px;
+    font-size: 35px;
+    font-family: "標楷體";
+    text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87;
+}
+.box{ 
+  margin: auto;
+  height:170px; 
+  width:550px; 
+  padding:50px; 
+  border:4px dotted #fde09d; 
+  border-radius: 50px;
+} 
+#goleft{
+  width:550px;
+  height:170px;
+  overflow:hidden;
+} 
+#goleft #gols{
+  width:2800px;
+  overflow: hidden;
+}
+#goleftone,#golefttwo {
+  width:auto;
+  float:left;
+} 
+.box a{
+  width:100px;
+  height:160px;
+  font-size: 20px;
+  font-family: "標楷體";
+  color:#000;
+  display:block;
+  text-align:center;
+  line-height:60px;
+  float:left;
+  margin-left:10px;
+  text-decoration:none;
+}
+.box img{
+  width: 100px;
+  height: 100px;
+}
+.box img:hover{
+  transform: scale(1.2);
+}

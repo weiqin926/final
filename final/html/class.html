@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/item.css">
+    <style>
+
+
+
+        li{list-style: none;}
+
+     
+
+         .title{
+
+             width: 200px; 
+             margin: 30px auto;
+
+            position: fixed;
+
+            height: 40px;
+            float: left;
+
+            background: #f4cb97;
+
+            border: 1px solid #ddd;
+
+        }
+
+         .title ul li{
+
+            float: left;
+
+            position: relative;
+            top: -15px;
+          
+
+            width: 55px;
+
+            height: 40px;
+
+            line-height: 40px;
+
+            text-align: center;
+
+           
+
+            cursor: pointer;
+
+        }
+
+         .title ul li span.red{
+
+            color: red;
+
+        }
+
+         .title ul li .hide{
+
+            display: none;
+
+            position: absolute;
+
+            top: 41px;
+
+            left: 0;
+
+            width: 100px;
+
+            height: 80px;
+
+            background: #fff;
+
+            border: 1px solid #ddd;
+
+        }
+
+         .title ul li .hide a{
+
+            display: block;
+
+            width: 100%;
+
+            height: 40px;
+
+        }
+
+        .title ul li .hide a:hover{color: red;}
+
+       #header{ 
+        margin: 450px auto; 
+        width: 850px;
+     }
+
+       #header ul{overflow: hidden;}
+
+      #header ul li{ 
+          position: relative;
+
+          float: left;
+
+          width: 200px;
+
+          height: 250px;
+
+          padding: 20px;
+
+          margin: 80px 14px 0;
+
+          border: 1px solid #ddd;
+          background-color:rgb(254, 248, 216);
+          border-radius: 30px;
+
+      }
+/*照片縮放*/
+#header  img{
+
+            width: 150px;
+            margin: 30px auto;
+            height: 140px;
+            display: block; 
+            border: none; 
+            cursor: pointer;
+            transform:scale(1,1);transition: all 1s ease-out;
+        }
+        #header img:hover{
+   transform:scale(1.2,1.2);
+    } 
+       #header ul li p{
+
+            overflow: hidden;
+
+            font-size: 20px;
+            text-align: center;
+            font-family: "標楷體";
+            font-weight: bold;
+            line-height: 20px;
+
+            margin-top: 5px;
+
+        }
+
+        #header ul li div.txt{
+
+            margin: -20px auto;
+
+          
+
+            width: 50px;
+
+            height: 50px;
+
+         
+
+           
+
+            font-weight: bold;
+
+            line-height: 50px;
+
+            text-align: center;
+
+            font-size: 14px;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo"> <a href="index.html"><img src="../images/logo.png"></a></div> 
+        <div class="nav">
+          <ul>
+              <il> <img src="../images/user(1).png"> <a href="register.html">註冊 |</a> <a href="login.html">登入</a><div class="cart"><a href="../html/shoppingcar.html"><img src="../images/cart.png"></a></div>
+                <form>  <button type="submit" style="background-color: transparent ; border: none; cursor: pointer;"><img src="../images/search.png"> </button><input type="text" placeholder="搜尋"></form>
+              </il>
+          </ul>
+      </div>
+    </header>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="../html/productall.html">🧡查看商品</a></li>
+            <li><a href="../html/about.html">🧡關於我們</a>
+            <ul class="dropdown">
+                <li><a href="../html/about.html">關於</a></li>
+                <li><a href="#">網站開發人員</a></li>
+          </ul>
+        </li>
+            <li><a href="../html/member.html">🧡會員資料</a></li>
+            <li><a href="../html/Q&A.html">🧡常見問答</a></li>
+            <li><a href="#">🧡後台管理</a></li>
+        </ul>
+      </nav>
+
+      <div id="cover" class="coverflow">
+        <a href='#'><img src="../images/cover1.jpg"></a>
+        <a href='#'><img src="../images/cover2.jpg"></a>
+        <a href='#'><img src="../images/cover3.jpg" ></a>
+    </div>
+
+
+<div class="category">
+<ul>
+<li id="first">商品類別</li>
+<li><a href="#吐司">🍞吐司系列</a></li>
+<li><a href="#甜口味">🍯甜甜系列</a></li>
+<li><a href="#鹹口味">🧂鹹鹹系列</a></li>
+</ul>
+</div> 
+      
+
+
+    <div class="title">
+
+        <ul>
+            <li>熱銷</li>
+            <li id="price">
+
+                <span>價格</span>
+
+                <div class="hide">
+
+                    <a>價格從高到低</a>
+
+                    <a>價格從低到高</a>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div id="header">
+
+        <ul>
+
+            <li><img src="img/xh_img1.jpg">
+
+                <p>粉色浪漫系列玫瑰</p>
+
+                <div class="txt">￥<span>500</span></div>
+
+            </li>
+
+            <li>
+
+                <p>粉色浪漫系列玫瑰</p><img src="../images/4-3.jpg">
+
+                <div class="txt">￥<span>500</span></div>
+
+            </li>
+
+            <li><img src="img/xh_img3.jpg">
+
+                <p>深紅色經典玫瑰</p>
+
+                <div class="txt">￥<span>100</span></div>
+
+            </li>
+
+            <li><img src="img/xh_img4.jpg">
+
+                <p>清淡優雅百年百合</p>
+
+                <div class="txt">￥<span>300</span></div>
+
+            </li>
+
+            <li><img src="img/xh_img5.jpg">
+
+                <p>紫色冷艷系列</p>
+
+                <div class="txt">￥<span>700</span></div>
+
+            </li>
+
+            <li><img src="img/xh_img6.jpg">
+
+                <p>經典紅色我的最愛</p>
+
+                <div class="txt">￥<span>130</span></div>
+
+            </li>
+
+            <li><img src="img/xh_img7.jpg">
+
+                <p>甜美七分袖荷葉邊條紋設</p>
+
+                <div class="txt">￥<span>215</span></div>
+
+            </li>
+
+            <li><img src="img/xh_img8.jpg">
+
+                <p>甜美七分袖荷葉邊條紋設</p>
+
+                <div class="txt">￥<span>97</span></div>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+   
+
+   <script>
+
+          /*1. 獲取點擊按鈕事件;
+
+             2.創建數組arr=[];
+
+             3.for循環arr[i]=[];將內容一個一個裝裡面 arr[i][0] arr[i][1];
+
+             4.點擊排序; 排序前清空內容,在添加內容;
+
+       */
+
+        var Price=document.getElementById("price");
+
+        var Hide=document.getElementsByClassName("hide")[0];
+
+       var HideA=document.querySelectorAll(".title .hide a");
+
+ 
+
+
+        var List=document.querySelectorAll("#header ul li");
+
+        var ListUl=document.querySelector("#header ul");
+
+       var arr=[];
+
+               Price.onmousemove=function () {
+
+                Hide.style.display="block";
+
+               };
+
+              Price.onmouseout=function () {
+
+                  Hide.style.display="none";
+
+              };
+
+          for (var i=0; i<HideA.length; i++)
+
+          {
+
+                HideA[i].index=i;
+
+                HideA[i].onclick=function () {
+
+               Sort(this.index)
+
+              }
+
+          }
+
+           for ( i=0; i<List.length;i++)
+
+           {
+
+               arr[i]=[];
+
+               arr[i][0] = List[i].querySelector("img").src;
+
+               arr[i][1]=List[i].querySelector("p").innerHTML;
+
+               arr[i][2]=Number(List[i].querySelector("span").innerHTML);
+
+               console.log(arr[i][0])
+
+           }
+
+           function Sort(index) {
+
+                if (index)
+
+                {
+
+                   arr.sort(function (a,b) {
+
+                       return a[2]-b[2];
+
+                   })
+
+                }
+
+                else {
+
+                    arr.sort(function (a,b) {
+
+                        return b[2]-a[2]
+
+                    })
+
+                }
+
+               ListUl.innerHTML="";
+
+            for (i=0; i<List.length; i++)
+
+             {
+
+                 ListUl.innerHTML+="<li><img src='"+arr[i][0]+"'><p>"+arr[i][1]+"</p><div class='txt'>￥<span>"+arr[i][2]+"</span></div> </li>"
+
+             }
+
+           }
+
+   </script>
+
+</body>
+
+</html>

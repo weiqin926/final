@@ -1,0 +1,61 @@
+table{
+    border-collapse: collapse;  /*單元格合併*/
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid silver;
+}
+.title{
+    font-size: 14px;
+}
+.face{
+    width: 80px;
+}
+.word{
+    width: 200px;
+    font-size: 12px;
+    color: #000;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 10px;
+}
+td{
+    padding: 10px 0;
+    min-width: 65px;
+}
+.price{
+    font-weight: bold;
+    color: black;
+}
+.totle{
+    font-weight: bold;
+    color: red;
+}
+tr{
+    border: 1px solid #d8d8d8;
+    background-color: #f6f6f6;
+}
+.btn button{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border-style: none;
+    background-color: #e0e0e0;
+}
+.btn input{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.accounts a:link,a:visited{
+    color:#000;
+    text-decoration: none
+}
+
+.back,.accounts,#btnDelete{
+    font-size: 15px;
+    border:0;
+    border-radius: 5px;
+    background-color: #FFE153;
+    cursor: pointer;
+}

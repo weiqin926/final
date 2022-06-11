@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/order.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> <a href="index.html"><img src="../images/logo.png"></a></div> 
+        <div class="nav">
+          <ul>
+              <il> <img src="../images/user(1).png"> <a href="register.html">註冊 |</a> <a href="login.html">登入</a><div class="cart"><a href="../html/shoppingcar.html"><img src="../images/cart.png"></a></div>
+                <form>  <button type="submit" style="background-color: transparent ; border: none; cursor: pointer;"><img src="../images/search.png"> </button><input type="text" placeholder="搜尋"></form>
+              </il>
+          </ul>
+      </div>
+    </header>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="../html/productall.html">🧡查看商品</a></li>
+            <li><a href="../html/about.html">🧡關於我們</a>
+            <ul class="dropdown">
+                <li><a href="../html/about.html">關於</a></li>
+                <li><a href="#">網站開發人員</a></li>
+          </ul>
+        </li>
+            <li><a href="../html/member.html">🧡會員資料</a></li>
+            <li><a href="../html/Q&A.html">🧡常見問答</a></li>
+            <li><a href="#">🧡後台管理</a></li>
+        </ul>
+      </nav>
+      <section>
+        <form method="post" action="" name="order"></form>
+        <div class="buy">
+          <div class="top">
+            <h1>結帳資料</h1>
+          </div>
+          <table border="1">
+            <tr>
+              <td class="title">姓名<input type="hidden" name="" value=""></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="title">購買商品<input type="hidden" name="" value=""></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="title">總計<input type="hidden" name="" value=""></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td class="title">聯絡電話</td>
+              <td class="phone"><input type="text" name="phone" id="txt1" placeholder="請輸入電話(只能是數字)" oninput="if(!(/^[0-9]*$/.test(value))){value=''}" maxlength="10"></td>
+            </tr>
+            <tr>
+              <td class="title">付款方式</td>
+              <td><input type="radio" name="payway" value="card">信用卡
+                  <input type="radio" name="payway" value="cod">貨到付款
+                  <input type="radio" name="payway" value="transfer">轉帳
+              </td>
+            </tr>
+            <tr>
+              <td class="title">運送方式</td>
+              <td><input type="radio" name="transport" value="delivery">宅配到府
+                  <input type="radio" name="transport" value="store">超商取貨
+              </td>
+            </tr>
+            <tr>
+              <td class="title">運送地址</td>
+              <td class="address"><select name="address1">
+                <option value="臺北市" selected>臺北市</option>
+                <option value="新北市" >新北市</option>
+                <option value="桃園市" >桃園市</option>
+                <option value="新竹縣" >新竹縣</option>
+                <option value="新竹市" >新竹市</option>
+                <option value="苗栗縣" >苗栗縣</option>
+                <option value="臺中市" >臺中市</option>
+                <option value="彰化縣" >彰化縣</option>
+                <option value="南投縣" >南投縣</option>
+                <option value="雲林縣" >雲林縣</option>
+                <option value="嘉義縣" >嘉義縣</option>
+                <option value="嘉義市" >嘉義市</option>
+                <option value="臺南市" >臺南市</option>
+                <option value="高雄市" >高雄市</option>
+                <option value="屏東縣" >屏東縣</option>
+                <option value="基隆市" >基隆市</option>
+                <option value="宜蘭縣" >宜蘭縣</option>
+                <option value="花蓮縣" >花蓮縣</option>
+                <option value="臺東縣" >臺東縣</option>
+                <option value="澎湖縣" >澎湖縣</option>
+                <option value="金門縣" >金門縣</option>
+                <option value="連江縣" >連江縣</option>             
+            </select>
+            <input type="text" name="address" id="txt2" placeholder="請輸入地址"></td>
+            </tr>
+            <tr>
+              <td class="title">備註</td>
+              <td><textarea rows="4" cols="50" name="note"></textarea></td>
+            </tr>
+          </table>
+       
+          <div class="btn">
+          <input type="submit" name="submit" value="確認訂單" onclick="check()" id="btn">
+          </div>
+          <div class="btn2">
+          <a href="../html/index.html"><input type="button" name="cancel" value="回首頁"></a>
+          </div>
+        </div>
+        </form>
+      </section>
+      <footer>
+        Copyright © 2022 Dream Bakery.<br> All rights reserved.<br>
+      </footer>
+      <script src="../js/order.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.scroll{
+  background:url(../images/ch1_pc.png);
+  margin-top:50px;
+  padding: 0px;
+  position:relative;
+  opacity:0.85;
+  background-attachment:fixed;
+  background-size:cover;
+  background-repeat:no-repeat;
+  min-height:600px;
+}
+.scroll p{
+  position:absolute;
+  top:23%;
+  width:100%;
+  text-align:center;
+  font-size:80px;
+  color:#fff;
+  text-shadow:0px 5px 20px #000;
+  letter-spacing:10px;
+}
+.scroll-text p{
+    max-width:960px;
+    margin: 20px auto;
+     line-height:2;
+    }
+.five{
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 5%;
+      }
+.resist{
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        line-height: 2;
+      }
+.resist-box{
+       
+        flex-direction: column;
+      }
+.resist-box img {
+       width: 150px;
+       height: 120px;
+      }
+.contact{
+    font-size: 35px;
+    letter-spacing: 8px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.iframe iframe{
+    width:400px;
+    height:400px;
+    margin-top:80px;
+    margin-left: 10%;
+   
+  }
+.contact-hr{
+    text-align: center;  
+}
+.contact-text{
+   line-height: 2;
+   font-size: 20px;
+   float: right;
+   margin-top: -450px;
+   width: 350px;
+}
+.contact-text input{
+    font-size: 20px;
+    width: 300px;
+}
+.contact-text select{
+    font-size: 20px;
+    width: 300px;
+}
+.contact-text textarea{
+    font-size: 20px;
+    width: 300px;
+    height: 100px;
+}

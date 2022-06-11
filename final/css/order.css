@@ -1,0 +1,50 @@
+.buy{
+    width: 650px;
+    height: 550px;
+    padding: 30px;
+    margin:auto;
+    font-family: 微軟正黑體;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    padding-left: 110px;
+    margin-top: -30%;
+    font-size: 40px;
+}
+
+.title{
+    padding: 10px;
+    background-color:#FFFFAA ;
+    text-align: center;
+    width: 78px;
+    font-size: 18px;
+}
+
+table{
+    margin-top: 10%;
+}
+
+.phone input,.address input{
+    width:70%;
+}
+
+.btn{
+    margin-top: 5%;
+}
+
+.btn input, .btn2 input{
+    margin-left: 35%;
+    font-size: 20px;
+    border:0;
+    border-radius: 5px;
+    background-color: #FFE153;
+    cursor: pointer;
+}
+
+.btn2{
+    margin-top: 10px;
+}
+
+
