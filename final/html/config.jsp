@@ -1,9 +1,0 @@
-<%@page contentType="text/html;charset=utf-8" language="java" import="java.sql.*"%>
- <%@ page import = "java.io.*"%>
-<%
-Class.forName("com.mysql.jdbc.Driver");
-String url="jdbc:mysql://127.0.0.1:3306/bakery?serverTimezone=UTC";
-Connection con=DriverManager.getConnection(url,"root","1234");
-String sql="USE `bakery`";
-con.createStatement().execute(sql);
-%>

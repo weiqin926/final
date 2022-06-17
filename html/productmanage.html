@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品管理</title>
+    <link rel="stylesheet" type="text/css" href="../css/pmanage.css">
+</head>
+<body>
+    <div class="title">
+        <h1>商品管理</h1>
+    </div>
+    <form method="post" name="" action="">
+    <table id="tb" border="1" align="center">
+        <tr>
+            <td>勾選</td>
+            <td>商品編號</td>
+            <td>商品名稱</td>
+            <td>商品價格</td>
+            <td>商品數量</td>
+            <td>編輯</td>
+       </tr>
+       <tr>
+           <td><input type="checkbox" name="del"></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td><input type="button" name="change" id="show" value="修改"></td>
+           <dialog id="add">
+            請輸入修改商品名稱:<input type="text" name="txt1"><br>
+            請輸入修改的商品價格:<input type="text" name="txt2"><br>
+            請輸入修改商品數量:<input type="text" name="txt3"><br>
+            <input type="submit" name="add" value="確定">
+            <button id="close">關閉</button>
+        </dialog>
+        </tr>
+    </table>
+    <div class="btn">
+        <input type="button" name="btn1" id="show2" value="新增商品">
+        <dialog id="add2">
+            請輸入要新增商品:<input type="text" name="txt1"><br>
+            請輸入要新增商品價格:<input type="text" name="txt2"><br>
+            請輸入要新增商品數量:<input type="text" name="txt3"><br>
+            <input type="submit" name="add2" value="確定">
+            <button id="close2">關閉</button>
+        </dialog>
+        <input type="button" name="btn3" id="btnDelete" value="刪除勾選商品">
+        <a href="../html/manage.html"><input type="button" name="btn4" value="回到管理頁面"></a>
+        </form>
+    </div>
+
+    <script src="../js/pmanage.js"></script>
+</body>
+</html>

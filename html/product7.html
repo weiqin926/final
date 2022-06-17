@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/product.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="../js/jquery.star-rating-svg.min.js"></script>
+    <script src="../js/jquery.star-rating-svg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+
+</head>
+<body>
+    <header>
+        <div class="logo"> <a href="index.html"><img src="../images/logo.png"></a></div> 
+        <div class="nav">
+          <ul>
+              <il> <img src="../images/user(1).png"> <a href="register.html">註冊 |</a> <a href="login.html">登入</a><div class="cart"><a href="../html/shoppingcar.html"><img src="../images/cart.png"></a></div>
+                <form>  <button type="submit" style="background-color: transparent ; border: none; cursor: pointer;"><img src="../images/search.png"> </button><input type="text" placeholder="搜尋"></form>
+              </il>
+          </ul>
+      </div>
+    </header>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="../html/productall.html">🧡查看商品</a></li>
+            <li><a href="../html/about.html">🧡關於我們</a>
+            <ul class="dropdown">
+                <li><a href="../html/about.html">關於</a></li>
+                <li><a href="../html/team.html">網站開發人員</a></li>
+          </ul>
+        </li>
+            <li><a href="../html/member.html">🧡會員資料</a></li>
+            <li><a href="../html/Q&A.html">🧡常見問答</a></li>
+   
+        </ul>
+      </nav>
+    <main>
+      <div class="item">
+        <div id="change">
+        <div>  
+            <div class="mySlides">
+                <img id="main" src="../images/peanut.jpg">
+            </div>
+        </div>
+
+            <div class="mySlides">
+                <img src="../images/sandwich2.jpg">
+            </div>
+            <div class="mySlides">
+                <img src="../images/sandwich1.jpg">
+            </div>
+            
+        </div>
+        <ul id="number-ul">
+            <li class="number-li">
+                <div>
+                    <img src="../images/peanut.jpg" id="item1" onclick="currentSlide(1)" />
+                </div>
+            </li>
+            <li class="number-li">
+                <div>
+                    <img src="../images/sandwich2.jpg" id="item2" onclick="currentSlide(2)" />
+                </div>
+            </li>
+            <li class="number-li">
+                <div>
+                    <img src="../images/sandwich1.jpg" id="item3" onclick="currentSlide(3)"/>
+                </div>
+            </li>
+        </ul> 
+        <form action=" " method="post" >
+      <div class="word">
+      <div class="product">夾心麵包</div><br><div class="toast">難忘的兒時回憶，麵包店必有的古早味麵包!自製麵包底部塗上奶油，再搭配不同口味配料，保證讓你擁有滿滿的古早風味!</div><br>
+      <div class="content">$30<br>
+        主成份：麵粉、糖、蛋、奶油<br>
+        口味：<input type="button" value="花生" class="taste">
+              <input type="button" value="草莓" class="taste">
+              <input type="button" value="椰子" class="taste"><br>
+              庫存:300
+     <br>數量：
+    
+        <div class="button"> 
+            <input type="button" class="button-num" value="-" id="btnMinus" onclick="minusNUM()">
+            <input type="text"  id="num" class="number" value="1" style="text-align:center" maxlength="3" oninput="limiteValue(this)" onpropertychange="limiteValue(this)"/>
+            <input type="button" class="button-num" value="+" id="btnAdd" onclick="addNUM()">
+        </div>
+   <input type="submit" value="直接購買" class="car">
+    <input type="submit" value="加到購物車" class="car1">
+ </div></div>  </form> </div>
+ <br><br><br><br>
+ <div class="board">
+         <h1>商品評價 </h1> 
+     <form action="" method="get">       
+         <div class="my-rating-6"></div>
+         <p id="myP"></p>
+             <input type="hidden" id="test" name="star" >
+             <textarea></textarea><br>
+             <div class="button">
+             <input type="submit" value="送出">
+             <input type="reset" value="重新填寫">
+             </div>
+     </form> 
+ </div>
+ 
+      </main>
+      <div style="margin-left:150px ;">
+         <div>
+          <h2>其他買家評論</h2>
+<div class="top">
+     <img onclick="topFunction()" id="myBtn" src="../images/bread.png" style=" width: 70px;height: 80px;">
+     <img onclick="topFunction()" id="myBtn0" src="../images/top.png" style=" width: 50px;height: 50px;">
+   </div>
+   <footer>
+Copyright © 2022 Dream Bakery.<br> All rights reserved.<br>
+</footer>
+<script src="../js/product1.js"></script>
+<script src="../js/time.js"></script>
+<script src="../js/top.js"></script>
+<script src="../js/star.js"></script>
+</body>      
+                                 
+</html>
+                            
