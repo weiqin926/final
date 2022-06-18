@@ -1,0 +1,33 @@
+body{
+    background-color: rgba(250, 161, 101, 0.966);
+    color: black;
+
+}
+
+.logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.title{
+    text-align: center;
+    font-size: 28px;
+}
+
+.loginBox{
+    margin-left: 40%;
+}
+
+button{
+    font-size: 20px;
+    margin-left: 15%;
+    cursor: pointer;
+    border:0;
+    border-radius: 5px;
+    background-color: #FFE153;
+}
+
+button a:link,a:visited{
+    color:#000;
+    text-decoration: none
+}

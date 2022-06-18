@@ -1,0 +1,13 @@
+.title{
+    text-align: center;
+}
+
+body{
+    background-color: rgba(250, 161, 101, 0.966);
+    color: black;
+}
+
+.btn{
+    margin-top: 10%;
+    margin-left: 45%;
+}

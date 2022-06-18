@@ -1,0 +1,25 @@
+.title{
+    font-size: 48px;
+    text-align: center;
+}
+
+.content{
+    margin-top: 100px;
+}
+
+.product input{
+    font-size: 36px;
+    cursor: pointer;
+    border:0;
+    border-radius: 5px;
+    background-color: #FFE153;
+}
+
+.order input{
+    margin-top: 100px;
+    font-size: 36px;
+    cursor: pointer;
+    border:0;
+    border-radius: 5px;
+    background-color: #FFE153;
+}

@@ -1,0 +1,22 @@
+.title{
+    text-align: center;
+}
+
+body{
+    background-color: rgba(250, 161, 101, 0.966);
+    color: black;
+}
+
+.btn{
+    margin-top: 10%;
+    margin-left: 40%;
+}
+
+dialog{
+    border: none;
+    box-shadow: 0 2px 6px #ccc;
+    border-radius: 10px;
+  }
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
