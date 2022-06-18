@@ -80,10 +80,10 @@
    transform:scale(1.2,1.2);
     } 
  .shape-ex1{
-    width: 80%;
+    max-width: 100%;
     height: 5%;
-    margin: 20px 3px;
-    display: block;
+    margin: 25px auto;
+
     text-align: center;
     cursor: pointer;
     line-height: 40px;
